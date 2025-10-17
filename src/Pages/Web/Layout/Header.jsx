@@ -72,7 +72,7 @@ export default function Header() {
           </Link>
 
           <Link
-            to="/"
+            to="/auth/signup"
             className="bg-[#FF6B6B] text-white text-base px-4 h-10 flex items-center rounded-md hover:bg-[#ff4f4f] transition no-underline"
             style={{ textDecoration: "none" }}
           >

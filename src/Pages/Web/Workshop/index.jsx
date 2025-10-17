@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
-import Headline from "../../../../components/public_components/headline";
-import AiComing from "../../../../components/public_components/AiComing";
+import Headline from "../../../components/public_components/headline";
+import AiComing from "../../../components/public_components/AiComing";
 
 export default function Workshop() {
   return (

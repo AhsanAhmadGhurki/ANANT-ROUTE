@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import Headline from "../../../../components/public_components/headline";
-import AiComing from "../../../../components/public_components/AiComing";
+import Headline from "../../../components/public_components/headline";
+import AiComing from "../../../components/public_components/AiComing";
 
 // iconify
 import { Icon } from "@iconify/react";

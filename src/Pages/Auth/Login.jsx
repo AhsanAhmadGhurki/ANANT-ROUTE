@@ -81,7 +81,7 @@ export default function Login() {
             <div className=" text-sm text-gray-600">
               Already have an account?&nbsp;
               <a
-                href="/signup"
+                href="/auth/signup"
                 style={{ color: "#FE6963" }}
                 className="hover:underline"
               >

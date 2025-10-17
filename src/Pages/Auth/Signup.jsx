@@ -146,7 +146,7 @@ export default function Signup() {
             <div className="text-sm text-gray-600">
               Already have an account?&nbsp;
               <a
-                href="/login"
+                href="/auth"
                 style={{ color: "#FE6963" }}
                 className="hover:underline"
               >

@@ -1,12 +1,8 @@
 // import { useState } from "react";
 import { Icon } from "@iconify/react";
-import Headline from "../../../../components/public_components/Headline";
-import InfoBadge from "../../../../components/public_components/InfoBadge";
-import PollChartList from "../../../../components/public_components/PollChartList";
-// import Headline from "../components/public_components/Headline";
-// import InfoBadge from "../components/public_components/InfoBadge";
-// import Chart from "../../components/public_components/Chart";
-// import PollChartList from "../components/public_components/PollChartList";
+import Headline from "../../../components/public_components/headline";
+import InfoBadge from "../../../components/public_components/InfoBadge";
+import PollChartList from "../../../components/public_components/PollChartList";
 
 export default function About() {
   // const [timeRange, setTimeRange] = useState("week");
