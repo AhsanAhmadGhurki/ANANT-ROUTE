@@ -22,7 +22,7 @@ const Profile = () => {
         <div className="w-[60px] h-[60px]">
           <img
             className="w-full h-full object-cover"
-            src="/public/images/ant.png"
+            src="/images/ant.png"
             alt=""
           />
         </div>
