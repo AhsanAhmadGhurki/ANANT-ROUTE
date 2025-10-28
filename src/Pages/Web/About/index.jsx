@@ -1,12 +1,15 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Icon } from "@iconify/react";
 import Headline from "../../../components/public_components/headline";
 import InfoBadge from "../../../components/public_components/InfoBadge";
 import PollChartList from "../../../components/public_components/PollChartList";
+import BarChartComponent from "../../../components/public_components/BarChartComponent";
+import LineChartComponent from "../../../components/public_components/LineChartComponent";
+import LegendWithFilters from "../../../components/public_components/Filters";
 
 export default function About() {
-  // const [timeRange, setTimeRange] = useState("week");
-  // const currentData = pollData[timeRange];
+  const [activeFilter, setActiveFilter] = useState("Age");
+  const filters = ["Age", "Gender", "Poli", "Authentication"];
 
   return (
     <div className="hide-scrollbar overflow-auto">
@@ -20,16 +23,31 @@ export default function About() {
                 height="24"
               />
             </div>
-            <div className="font-medium text-base">Featured Poll</div>{" "}
+            <div className="font-medium text-base">Featured Poll</div>
           </div>
           <Headline />
-          <div className="w-full h-auto mt-6">
-            <img src="/images/chart.png" alt="" />{" "}
+          <div className="mt-10">
+            {/* Filters + Legend */}
+            <LegendWithFilters
+              filters={filters}
+              activeFilter={activeFilter}
+              setActiveFilter={setActiveFilter}
+            />
+
+            {/* Charts */}
+            <div className="flex flex-col gap-6 md:flex-row">
+              <div className="md:w-1/3">
+                <BarChartComponent />
+              </div>
+              <div className="md:w-2/3">
+                <LineChartComponent />
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Info Badges Section */}
-        <div className="grid md:grid-cols-3 gap-9">
+        <div className="grid md:grid-cols-3 gap-9 py-10">
           <InfoBadge
             title="Opinion polling as a civic tool"
             desc="Empowering an informed populace to find common ground."
@@ -51,7 +69,7 @@ export default function About() {
           />
         </div>
 
-        {/* import PollChart */}
+        {/* Poll Chart List */}
         <PollChartList />
 
         {/* loading... */}

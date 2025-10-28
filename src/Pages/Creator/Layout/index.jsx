@@ -1,26 +1,24 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../../../components/Footer";
-import Sidebar from "./Sidebar";
+import Sidebar from "./sidebar.jsx";
 import AppHeader from "../../../components/AppHeader.jsx";
 
-export default function UserLayout() {
+export default function CreatorLayout() {
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen">
       {/* Header */}
       <AppHeader />
 
       {/* Main content with sidebar */}
-      <div className="flex flex-1 container mx-auto gap-10 py-6 overflow-hidden">
+      <div className="flex flex-1 container mx-auto gap-10 py-6">
         <Sidebar />
-
-        {/* Make only the main area scrollable */}
-        <main className="flex-1 p-4 overflow-y-auto">
+        <main className="flex-1 p-4">
           <Outlet />
         </main>
       </div>
 
-      {/* Footer stays visible at bottom */}
+      {/* Footer stays at bottom */}
       <Footer />
     </div>
   );

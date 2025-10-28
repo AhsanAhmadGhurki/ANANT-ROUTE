@@ -4,23 +4,25 @@ import Footer from "../../../components/Footer";
 import Sidebar from "./Sidebar";
 import AppHeader from "../../../components/AppHeader.jsx";
 
-export default function UserLayout() {
+export default function AdminLayout() {
   return (
     <div className="flex flex-col h-screen overflow-hidden">
-      {/* Header */}
-      <AppHeader />
+      {/* Fixed header */}
+      <div className="sticky top-0 z-50 bg-white">
+        <AppHeader />
+      </div>
 
-      {/* Main content with sidebar */}
       <div className="flex flex-1 container mx-auto gap-10 py-6 overflow-hidden">
-        <Sidebar />
+        {/* Fixed sidebar */}
+        <div className="w-64 flex-shrink-0å sticky top-[88px] self-start">
+          <Sidebar />
+        </div>
 
-        {/* Make only the main area scrollable */}
-        <main className="flex-1 p-4 overflow-y-auto">
+        {/* Scrollable main content with hidden scrollbar */}
+        <main className="flex-1 p-4 overflow-y-auto no-scrollbar">
           <Outlet />
         </main>
       </div>
-
-      {/* Footer stays visible at bottom */}
       <Footer />
     </div>
   );
