@@ -18,7 +18,6 @@ const Sidebar = () => {
           }
         >
           <div className="flex items-center gap-2">
-            {/* <Icon icon="iconamoon:profile-light" width="20" height="20" /> */}
             <Icon icon="mage:dashboard" width="20" height="20" />
             <p>Dashboard</p>
           </div>
@@ -71,7 +70,7 @@ const Sidebar = () => {
           }
         >
           <div className="flex items-center gap-2">
-            <Icon icon="uil:graph-bar" width="20" height="20" />
+            <Icon icon="iconamoon:profile-light" width="20" height="20" />
             <p>Profile</p>
           </div>
         </NavLink>

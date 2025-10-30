@@ -1,9 +1,49 @@
 import React from 'react'
+import StatCards from "../../../components/public_components/StatCards";
 
 const Moderation = () => {
   return (
-    <div>Moderation
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla id nostrum impedit, explicabo dicta voluptas sapiente asperiores eligendi? Eveniet sequi fuga veniam natus nulla fugiat atque incidunt officiis distinctio id accusantium optio odio necessitatibus est consectetur, facere tenetur esse asperiores suscipit. Voluptatum doloribus impedit laborum quae. Adipisci, quibusdam, corporis corrupti perferendis voluptas totam aspernatur enim asperiores delectus nesciunt, magnam suscipit veniam culpa deleniti autem alias distinctio aliquam tempora illum odio. Maxime voluptas beatae doloribus tenetur eveniet ipsam dolore voluptatibus vitae quam aperiam libero provident quis, dolor odit nostrum nulla nisi atque placeat minus? Doloribus iste at perspiciatis, sed tempore, aut quo maiores excepturi est voluptas nam? Maxime soluta veniam esse facere laudantium dicta asperiores consequuntur repellendus nobis. Aut hic reiciendis est id beatae iste deserunt adipisci, atque animi sequi impedit voluptatibus, corporis deleniti velit voluptates quia laboriosam architecto consequuntur ab rerum blanditiis! Nemo ullam quas maxime obcaecati nihil necessitatibus ex quisquam quod quibusdam nesciunt amet recusandae molestias doloremque, esse minus totam delectus illo repellat facere provident? Temporibus, dolorem at error optio commodi voluptas neque exercitationem non aliquam porro quidem, hic culpa alias magnam corrupti, voluptate natus quam aspernatur id doloremque illum dicta. Sit obcaecati consequuntur optio alias sunt? Illum nobis quod veritatis est quam ipsum autem. Error, eius laudantium? Iure, nulla, deserunt odio molestias iste officiis rem magni quae commodi eveniet maiores eligendi dolore autem! Deserunt hic ullam repudiandae reiciendis iste, perspiciatis neque ut minima repellendus voluptatibus sint quaerat earum fugiat aspernatur aperiam tempore doloremque adipisci perferendis? Porro at cum ipsam aperiam distinctio cupiditate earum commodi impedit, blanditiis fuga alias quasi quas molestiae dignissimos facere eos tenetur sapiente cumque sed ducimus dicta! Perspiciatis odio quis pariatur necessitatibus vel blanditiis, quisquam quod doloribus facere tenetur dicta quam nisi delectus voluptas? Cumque dolores reiciendis harum provident quod quaerat quasi? Nostrum, porro qui. Eius, excepturi. Modi nostrum laudantium, enim a dolore quis quo iure laboriosam facilis saepe eius tempora impedit quas nulla unde molestias ullam similique voluptatum. Autem similique, neque repellat accusantium suscipit eum in facilis, cum eius, iusto voluptatum velit porro eveniet rem voluptatem ipsa! Temporibus corrupti consequuntur nemo delectus! Fuga commodi aspernatur, aliquam quae culpa dolore ipsum illo provident perspiciatis molestias dolor labore autem eos recusandae reiciendis velit nisi sequi eveniet reprehenderit ab hic id atque voluptatibus. Reprehenderit nisi, molestiae hic nulla perferendis, optio cumque quasi veniam architecto, omnis aspernatur incidunt accusamus? Facere veniam, possimus culpa minima cupiditate quos ex et? Nemo veritatis atque voluptatibus rem molestias vero obcaecati tempore ad quibusdam libero pariatur laboriosam odit quia expedita eum quod in, illo itaque a fugiat optio ducimus! Velit neque impedit cumque quasi recusandae maxime rem, dolores beatae aliquid incidunt minima molestias quam, nostrum sequi distinctio facilis necessitatibus dolorem tempora! Facilis ut inventore aut ipsum nisi voluptas aperiam unde velit molestias animi modi, explicabo vel in fuga dolorum quod amet itaque sit ratione voluptate dolor labore odio. Incidunt voluptas corporis debitis saepe perferendis placeat eum aut nam eos quam repudiandae ex natus maiores eligendi ab tenetur perspiciatis magni tempora nulla unde ad pariatur voluptate, dolorum corrupti? Nemo necessitatibus facilis eaque maxime, ea ad aliquid esse velit quod dicta quis ex laboriosam minus enim voluptate culpa quasi nulla error. Possimus sed voluptate illo natus, neque vitae aspernatur est quae nam ullam dolorem dolore. Rerum sequi dolores, beatae nam ex molestiae, neque provident explicabo dolore corrupti sapiente similique rem itaque voluptatibus adipisci? Delectus expedita minima soluta natus, non dolor aliquam quidem iste deserunt nemo maiores ea nulla, ad officiis omnis obcaecati id laboriosam quasi laborum. Molestiae impedit inventore sapiente dolor maiores quo voluptates molestias beatae. Repellat beatae quos aliquam non id itaque cumque ipsum saepe quisquam dolor facilis quibusdam pariatur, explicabo est excepturi suscipit dolorum impedit necessitatibus et eveniet placeat magnam, dicta, inventore doloremque. Exercitationem excepturi eveniet numquam ratione consequuntur quasi explicabo eius quam dolores adipisci debitis vel nisi fuga, iure nobis labore accusantium? Molestias, eligendi obcaecati eius nesciunt fuga itaque, sapiente officia hic repellendus, libero pariatur temporibus ducimus ea quasi incidunt officiis similique commodi a recusandae vitae odit corrupti. Debitis nesciunt, aperiam expedita ad, deserunt dignissimos perspiciatis nemo repudiandae a reprehenderit, accusantium porro nihil explicabo dolorum ullam impedit nobis magni suscipit vel quas nostrum? Eveniet nobis tempore minus sunt error nam illo assumenda eius id possimus pariatur laudantium odit autem suscipit unde rem quibusdam officia, saepe vero ratione aperiam ipsum nisi! Dolorem adipisci repudiandae aliquam inventore temporibus animi ipsam vero. Eaque recusandae voluptas aperiam dolore. Iusto repellat eius quae sint sapiente eligendi ipsa tempore expedita earum minus consequuntur porro, non excepturi explicabo nesciunt perspiciatis quod eum minima optio recusandae soluta! Similique sed modi sequi, dolore ut ratione. Facere pariatur quas quia fugit harum modi rem impedit in dolorem autem illum placeat velit illo earum ut optio voluptatum laborum provident adipisci repudiandae explicabo, quasi quam officiis magnam? Quod vel omnis illo laboriosam, eos architecto nihil cumque? Minus harum dignissimos doloribus mollitia, ad molestias est cum eligendi, commodi reprehenderit voluptatem odit? Aut corrupti nisi voluptate omnis obcaecati sint laudantium cumque, eligendi ex modi neque illum tenetur reprehenderit placeat perspiciatis ratione distinctio. Omnis beatae quibusdam eius nesciunt dicta eum sequi neque voluptate, ut temporibus sed corrupti voluptatem odio. Illum expedita corporis eligendi mollitia, repellendus, dolores rerum consequatur consequuntur nostrum totam non excepturi sequi quisquam? Fuga illum deserunt, eum repellendus, odio optio corporis non consequatur quibusdam excepturi soluta libero magni tenetur consectetur earum? Nam minima, ea repellat impedit iure, repellendus accusamus necessitatibus doloremque laboriosam tempora placeat soluta rerum facilis nulla eveniet, officia possimus quia sit itaque quidem ipsa? Illo quod aperiam facere provident voluptates in dolor beatae sint officiis minus, delectus quis deleniti voluptate, quasi repellendus quas exercitationem rem molestiae cupiditate fugit distinctio! Doloribus quidem, et veniam eos ullam sint, autem blanditiis repellendus soluta alias nam aliquam laborum ipsa neque, voluptas quia iusto pariatur laudantium. Omnis ab voluptatibus itaque deleniti delectus, nihil ad. Hic, impedit. Quibusdam eveniet natus odit enim similique odio ea quidem a maxime cum! Accusamus maxime corrupti quam autem, eveniet quae odio. Atque, ducimus! Quaerat suscipit officia natus! Reiciendis ut nemo incidunt mollitia ad.
+    <div>
+      <div className="mb-7">
+        <p className="text-2xl font-medium">Dashboard</p>
+        <p className="text-sm text-slate-500">
+          Platform overview and key metrics
+        </p>
+      </div>
+
+      <StatCards
+        cardsPerRow={4} // 👈 Change this to 3, 4, 5, etc.
+        data={[
+          {
+            title: "Total Reports",
+            value: "1,247",
+            change: "+12% vs last month",
+            icon: "famicons:flag-outline",
+            iconColor: "text-[#FB2C36]",
+          },
+          {
+            title: "Open Reports",
+            value: 89,
+            change: "-3% vs last month",
+            icon: "icon-park-outline:caution",
+            iconColor: "text-[#FFB400]",
+          },
+          {
+            title: "Avg Resolution Time",
+            value: "1,128",
+            change: "-15% vs last week",
+            icon: "fluent:clock-20-regular",
+            iconColor: "text-[#D5332C]",
+          },
+          {
+            title: "Resolved Today",
+            value: 7,
+            change: "+5% vs last week",
+            icon: "cuida:calendar-outline",
+            iconColor: "text-[#F89000]",
+          }
+        ]}
+      />
     </div>
   )
 }

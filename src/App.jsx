@@ -15,6 +15,7 @@ import Dashboard from "./Pages/Creator/Dashboard";
 import CreatorLayout from "./Pages/Creator/Layout";
 import NewPolls from "./Pages/Creator/NewPolls";
 import ActivePolls from "./Pages/Creator/ActivePolls";
+import ClosePoll from "./Pages/Creator/ActivePolls/ClosePoll.jsx";
 import AdminLayout from "./Pages/Admin/Layout";
 import AdminDashboard from "./Pages/Admin/Dashboard";
 import PollManagement from "./Pages/Admin/PollManagement";
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
       {
         path: "ActivePolls",
         element: <ActivePolls />,
+      },
+      {
+        path: "ActivePolls/ClosePoll",
+        element: <ClosePoll />,
       },
       {
         path: "Profile",
