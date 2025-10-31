@@ -12,7 +12,7 @@ export default function AdminLayout() {
         <AppHeader />
       </div>
 
-      <div className="flex flex-1 container mx-auto gap-10 py-6 overflow-hidden">
+      <div className="flex flex-1 container mx-auto gap-10 pt-6 overflow-hidden">
         {/* Fixed sidebar */}
         <div className="w-64 flex-shrink-0å sticky top-[88px] self-start">
           <Sidebar />

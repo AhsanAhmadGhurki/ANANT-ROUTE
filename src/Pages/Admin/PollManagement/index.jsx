@@ -1,11 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import StatCards from "../../../components/public_components/StatCards";
+import ApprovalsAndFlaggedTables from "../../../components/public_components/ApprovalsAndFlaggedTables";
 
 const PollManagement = () => {
+  const [tableRows, setTableRows] = useState([
+    {
+      title: "Climate Change Solutions",
+      category: "Environment",
+      status: "Live",
+      created: "15 - 01 - 25",
+      votes: "1,245",
+    },
+    {
+      title: "Technology Trends 2024",
+      category: "Technology",
+      status: "Draft",
+      created: "12 - 01 - 25",
+      votes: "0",
+    },
+    {
+      title: "Best Programming Languages",
+      category: "Technology",
+      status: "Closed",
+      created: "10 - 01 - 25",
+      votes: "3,892",
+    },
+    {
+      title: "Social Media Impact",
+      category: "Society",
+      status: "Flagged",
+      created: "08 - 01 - 25",
+      votes: "567",
+    },
+  ]);
+
+  const handleApprove = (row, index) => {
+    setTableRows((prev) => prev.filter((_, i) => i !== index));
+    console.log("Approved:", row);
+  };
+
+  const handleDelete = (row, index) => {
+    setTableRows((prev) => prev.filter((_, i) => i !== index));
+    console.log("Deleted:", row);
+  };
+
   return (
     <div>
       <div className="mb-7">
-        <p className="text-2xl font-medium">Dashboard</p>
+        <p className="text-2xl font-medium">Poll Management</p>
         <p className="text-sm text-slate-500">
           Platform overview and key metrics
         </p>
@@ -51,6 +93,47 @@ const PollManagement = () => {
           },
         ]}
       />
+      
+      <ApprovalsAndFlaggedTables
+        readonly={true}
+        approvalsConfig={{
+          title: "Pending Creator Approvals",
+          columns: [
+            { key: "title", header: "Title", placeholder: "Poll title" },
+            {
+              key: "category",
+              header: "Category",
+              placeholder: "Category name",
+            },
+            {
+              key: "status",
+              header: "Status",
+              placeholder: "Status",
+            },
+            {
+              key: "created",
+              header: "Created",
+              placeholder: "Date",
+              readonly: true,
+            },
+            {
+              key: "votes",
+              header: "Votes",
+              placeholder: "0",
+              readonly: true,
+            },
+          ],
+          initialRows: tableRows,
+        }}
+        onRowsChange={(rows) => {
+          setTableRows(rows);
+        }}
+        onApprove={handleApprove}
+        onDelete={handleDelete}
+        approveIcon="mi:check"
+        deleteIcon="si:bin-line"
+      />
+
     </div>
   );
 };
