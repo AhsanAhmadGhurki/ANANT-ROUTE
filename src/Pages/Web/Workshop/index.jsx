@@ -21,10 +21,10 @@ export default function Workshop() {
   ];
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <Headline />
 
-      <div className="mt-10">
+      <div className="mt-6 sm:mt-8 md:mt-10">
         <LegendWithFilters
           filters={filters}
           activeFilter={activeFilter}
@@ -32,18 +32,18 @@ export default function Workshop() {
         />
       </div>
 
-      <div className="flex gap-6 mt-6">
+      <div className="flex flex-col md:flex-row gap-4 sm:gap-6 mt-4 sm:mt-6">
         {/* Left: Line Chart + Table */}
-        <div className="flex-1 flex flex-col gap-6">
-          <div className="h-[300px]">
+        <div className="flex-1 flex flex-col gap-4 sm:gap-6">
+          <div className="h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px]">
             <LineChartComponent />
           </div>
 
-          <AnswerTable  tableData={tableData} />
+          <AnswerTable tableData={tableData} />
         </div>
 
         {/* Right: Bar Chart */}
-        <div className="w-[35%] h-[600px]">
+        <div className="w-full md:w-[35%] lg:w-[40%] h-[400px] sm:h-[500px] md:h-[600px]">
           <BarChartComponent />
         </div>
       </div>

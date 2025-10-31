@@ -64,8 +64,8 @@ const LineChartComponent = () => {
   const [activeTab, setActiveTab] = useState("Year");
 
   return (
-    <div className="w-full h-[300px] flex flex-col justify-between">
-      <div className="flex-1">
+    <div className="w-full h-full flex flex-col justify-between">
+      <div className="flex-1 min-h-0">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={lineData}>
             <CartesianGrid stroke="#F3F4F6" />
@@ -129,12 +129,12 @@ const LineChartComponent = () => {
           </LineChart>
         </ResponsiveContainer>
       </div>
-      <div className="flex justify-between gap-4 mt-1 ms-16">
+      <div className="flex flex-wrap justify-center sm:justify-start gap-2 sm:gap-4 mt-2 sm:mt-1 sm:ms-16 ms-0 px-2 sm:px-0 flex-shrink-0">
         {["Week", "Month", "Year", "5 Year", "All"].map((t) => (
           <button
             key={t}
             onClick={() => setActiveTab(t)}
-            className={`px-6 py-1.5 rounded-md text-sm font-medium transition-all ${
+            className={`px-3 sm:px-6 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-all whitespace-nowrap ${
               activeTab === t
                 ? "bg-emerald-500 text-white"
                 : "bg-gray-50 text-gray-600 hover:bg-gray-100"

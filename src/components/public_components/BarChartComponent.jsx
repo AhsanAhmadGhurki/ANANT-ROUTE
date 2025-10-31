@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   BarChart,
   Bar,
@@ -27,8 +27,20 @@ const COLORS = {
 };
 
 const BarChartComponent = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full flex items-center">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={barData} barSize={70}>
           <CartesianGrid stroke="#f2f2f2" vertical={false} />
@@ -36,7 +48,17 @@ const BarChartComponent = () => {
             dataKey="name"
             axisLine={false}
             tickLine={false}
-            tick={false}
+            tick={
+              isMobile
+                ? false
+                : {
+                    fill: "#9CA3AF",
+                    fontSize: 11,
+                    angle: -45,
+                    textAnchor: "end",
+                    height: 60,
+                  }
+            }
           />
           <YAxis
             tickFormatter={(value) => `${value}%`}

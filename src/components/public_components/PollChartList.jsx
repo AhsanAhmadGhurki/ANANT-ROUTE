@@ -53,7 +53,7 @@ export default function PollChartList() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-4 sm:gap-6 w-full sm:px-0">
       {polls.map((poll, index) => (
         <PollChart
           key={index}
@@ -61,7 +61,11 @@ export default function PollChartList() {
           question={poll.question}
           options={poll.options}
           percentage={poll.percentage}
-          className={index === 0 ? "md:col-span-2" : ""}
+          className={
+            index === 0 
+              ? "sm:col-span-2 lg:col-span-3 xl:col-span-3" 
+              : ""
+          }
         />
       ))}
     </div>
